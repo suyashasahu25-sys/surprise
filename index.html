@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentines Letter Card</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+<body>
+    
+    <div class="container" id="main-screen">
+        <h1 class="valentine">Hello! Click on the OPEN button to reveal your surprise! <br> Next, click on the card!</h1>
+        
+        <div class="envelope-wrapper">
+            <div id="envelope" class="close">
+                
+                <div class="front flap"></div>
+                <div class="front pocket"></div>
+                
+                <div class="letter" id="clickable-letter">
+                    <div class="text">
+                        <strong>HI MY RISHU BABY,</strong>
+                        <p>
+                            <br> Will you be my Valentine Forever? 
+                            <br><br> With love, your rujul
+                        </p>
+                        <div class="heart-icon">♥</div>
+                    </div>
+                </div>
+
+                <div class="hearts">
+                    <div class="heart a1"></div>
+                    <div class="heart a2"></div>
+                    <div class="heart a3"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="reset">
+            <button id="open">OPEN</button>
+            <button id="reset">CLOSE</button>
+        </div>
+    </div>
+
+    <div class="screen hidden" id="question-screen">
+        <img src="image1.jpg" alt="Cute Picture" class="center-img"> 
+        <div class="question-text">Will you be mine?</div>
+        <div class="btn-group">
+            <button id="yes-btn">YES</button>
+            <button id="no-btn">NO</button>
+        </div>
+    </div>
+
+    <div class="screen hidden" id="success-screen">
+        <img src="image2.jpg" alt="Success Picture" class="center-img">
+        <h1 class="yay-text">YAYYYYY I LOVE YOU SO MUCH MY RISHU BABY!!! ★ </h1>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
